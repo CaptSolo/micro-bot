@@ -15,19 +15,18 @@ class MicroSearch(object):
     """Queries search.twitter.com for query string. Remembers id of last retrieved message,
     and in subsequent calls only returns new messages."""
 
-    def __init__(self, url, print_1st=True, bot_fact=None):
+    def __init__(self, url, channel, print_1st=True, bot_fact=None):
         self.url = url
         self.bot_fact = bot_fact
-
-        self.last_id = 0
         self.print_1st = print_1st
 
+        # Key for storing IDs of last msgs retrieved
+        self.key = self.url + "|" + channel
+
     def get_last_id(self):
-        key = self.url
-        return self.bot_fact.memory[key]
+        return self.bot_fact.memory.get(self.key, 0)
     def set_last_id(self, value):
-        key = self.url
-        self.bot_fact.memory[key] = value
+        self.bot_fact.memory[self.key] = value
     last_id = property(get_last_id, set_last_id)
 
     def find_last_id(self, data):
@@ -63,8 +62,8 @@ class MicroSearch(object):
                     yield x
 
 class TwitterSearch(MicroSearch):
-    def __init__(self, url, print_1st = True, bot_fact = None):
-        super(TwitterSearch,self).__init__(url, print_1st, bot_fact)
+    def __init__(self, url, channel, print_1st = True, bot_fact = None):
+        super(TwitterSearch,self).__init__(url, channel, print_1st, bot_fact)
 
     def format_output(self, msg):
         # Twitter does not supply the URL of the entry in its JSON results :(
@@ -82,8 +81,8 @@ class TwitterSearch(MicroSearch):
         return tmpl % ( msg['from_user'], txt, msg_url )
 
 class IdentiSearch(MicroSearch):
-    def __init__(self, url, print_1st = True, bot_fact = None):
-        super(IdentiSearch,self).__init__(url, print_1st, bot_fact)
+    def __init__(self, url, channel, print_1st = True, bot_fact = None):
+        super(IdentiSearch,self).__init__(url, channel, print_1st, bot_fact)
 
     def format_output(self, msg):
         # IdentiCa does not supply the URL of the entry in its JSON results :(

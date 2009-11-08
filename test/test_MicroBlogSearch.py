@@ -5,8 +5,6 @@ from MicroBlogSearch import MicroSearch, TwitterSearch
 from twisted.trial import unittest
 import simplejson as json
 
-from twisted.persisted.dirdbm import Shelf
-
 class MockFactory(object):
 
     def __init__(self, cfg = None):
@@ -22,7 +20,7 @@ class MockFactory(object):
 
 class SearchFilterTest(unittest.TestCase):
     def setUp(self):
-        self.t_srch = TwitterSearch( "http://something.net", bot_fact = MockFactory() )
+        self.t_srch = TwitterSearch( "http://something.net", "", bot_fact = MockFactory() )
 
     def test_retweet_filter(self):
         data = { 'results': ( {'id': 12, 'text': 'RT @user something', 'from_user': 'user', 'created_at': 'Sun, Aug 1'}, ) }
@@ -48,7 +46,7 @@ class TwitIrregularityTest(unittest.TestCase):
     # sent to IRC channel twice
 
     def setUp(self):
-        self.t_srch = MicroSearch("some url", bot_fact = MockFactory())
+        self.t_srch = MicroSearch("some url", "", bot_fact = MockFactory())
 
     def _supply(self, items):
         buf = {}
