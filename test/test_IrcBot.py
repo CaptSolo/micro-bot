@@ -207,6 +207,43 @@ name = #test-bot
         pass
 
 
+from twisted.internet import protocol, reactor
+
+class IrcBotFactoryTest(unittest.TestCase):
+    def test_missing_nick(self):
+        """Test that bot factory terminates execution if nick is missing from the config."""
+        cfg_str = """
+[irc-bot]
+server: irc.freenode.net
+load: chan1, chan2
+"""
+        self.cfg = BotConfig(StringIO(cfg_str), "irc-bot")
+        self.failUnlessRaises(SystemExit, IrcBot.LogBotFactory, self.cfg)
+
+    def test_missing_server(self):
+        """Test that bot factory terminates execution if server is missing from the config."""
+        cfg_str = """
+[irc-bot]
+nick: test-bot
+load: chan1, chan2
+"""
+        self.cfg = BotConfig(StringIO(cfg_str), "irc-bot")
+        self.failUnlessRaises(SystemExit, IrcBot.LogBotFactory, self.cfg)
+
+    def test_all_ok(self):
+        """Test that bot factory is created if both nick and server are present."""
+
+        cfg_str = """
+[irc-bot]
+nick: test-bot
+server: irc.freenode.net
+load: chan1, chan2
+"""
+        self.cfg = BotConfig(StringIO(cfg_str), "irc-bot")
+        self.f = IrcBot.LogBotFactory(self.cfg)
+        self.failUnlessIsInstance(self.f, IrcBot.LogBotFactory)
+
+
 class IncorrectConfigTest(unittest.TestCase):
     def setUp(self):
         irc.IRCClient = MockIrcClient
