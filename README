@@ -1,1 +1,21 @@
-Micro-Bot
+= Micro-Bot =
+
+http://github.com/CaptSolo/micro-bot
+
+Purpose:
+  IRC Bot that monitors microblogging conversations (Identi.ca, Twitter) and reports
+  tweets matching search keywords. 
+
+Created by: 
+  Uldis Bojars - http://captsolo.net/
+  
+License:
+  Modified BSD license - see LICENSE.txt
+
+
+== Usage ==
+
+python IrcBot.py config-file
+
+
+
