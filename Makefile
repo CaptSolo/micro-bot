@@ -4,3 +4,5 @@ run:
 run-test:
 	trial2.5 test
 
+push:
+	git push origin master

@@ -6,7 +6,7 @@ import sys
 import time
 from contextlib import closing
 
-VERSION_NUM = "1.0"
+VERSION_NUM = "1.1"
 
 sys.path.append(".")
 
@@ -30,9 +30,9 @@ class ChannelNameError(Exception):
 
 class LogBot(irc.IRCClient):
 
-    version = "micro-bot by @CaptSolo"
+    version = "micro-bot"
     versionNum = VERSION_NUM
-    realname = "reports new updates from microblogging sites"
+    realname = "http://github.com/CaptSolo/micro-bot"
     lineRate = 6
 
 #    def _reallySendLine(self, line):
