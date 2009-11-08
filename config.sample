@@ -1,6 +1,5 @@
 [irc-bot]
 nick: sioc-x-bot
-channel: test
 server: irc.freenode.net
 load: test
 
