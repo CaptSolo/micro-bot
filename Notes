@@ -1,15 +1,18 @@
-http://search.twitter.com/search.atom?q=+SIOC+OR+FOAF+OR+%23deri
 
-http://search.twitter.com/search.json?q=+SIOC+OR+FOAF+OR+%23deri
+= Notes =
 
-Search string (json feed) to act as source of tweets.
+== Tweet limits ==
 
-System needs to persist datetime OR ID of the last tweet received.
+On joining a channel the bot starts processes for monitoring microblogging services
+for keywords given in the configuration file.
 
-Publish it (them) to IRC.
+On joining a channel a monitoring service will report:
+ * new messages since the last time the program was run
+ * but no more than max_tweets messages (defaut: 5)
 
----
+The IDs of last messages retrieved are preserved between runs of the program, 
+stored in IrcBot.mem file. 
 
-Requires:
- - simplejson (Python library)
+The behaviour of what and how many messages are reported can be changed 
+by modifying the MicroBlogSearch.py file.
 

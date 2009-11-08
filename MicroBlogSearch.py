@@ -15,13 +15,20 @@ class MicroSearch(object):
     """Queries search.twitter.com for query string. Remembers id of last retrieved message,
     and in subsequent calls only returns new messages."""
 
-    def __init__(self, url, channel, print_1st=True, bot_fact=None):
+    # type of search object (I, M, T)
+    obj_type = "M"
+
+    # max no of tweets to report on the 1st run
+    max_tweets = 5
+
+
+    def __init__(self, url, channel, bot_fact=None):
         self.url = url
         self.bot_fact = bot_fact
-        self.print_1st = print_1st
+        self.first_run = True
 
         # Key for storing IDs of last msgs retrieved
-        self.key = self.url + "|" + channel
+        self.key = self.obj_type + "|" + channel + "|" + self.url
 
     def get_last_id(self):
         return self.bot_fact.memory.get(self.key, 0)
@@ -49,9 +56,10 @@ class MicroSearch(object):
         old_last_id = self.last_id
         self.last_id = max(self.find_last_id(data), self.last_id)
 
-        # Don't print anything on the 1st call. Next calls will print only new messages.
-        if not self.print_1st and 0 == old_last_id:
-            return
+        # Print only max_tweets on the 1st run. Next calls will print new messages since previous polling.
+        if self.first_run:
+            data['results'] = data['results'][-self.max_tweets:]
+            self.first_run = False
 
         print old_last_id, self.last_id
 
@@ -62,8 +70,12 @@ class MicroSearch(object):
                     yield x
 
 class TwitterSearch(MicroSearch):
-    def __init__(self, url, channel, print_1st = True, bot_fact = None):
-        super(TwitterSearch,self).__init__(url, channel, print_1st, bot_fact)
+
+    # type of search object (I, M, T)
+    obj_type = "T"
+
+    def __init__(self, url, channel, bot_fact = None):
+        super(TwitterSearch,self).__init__(url, channel, bot_fact)
 
     def format_output(self, msg):
         # Twitter does not supply the URL of the entry in its JSON results :(
@@ -81,8 +93,12 @@ class TwitterSearch(MicroSearch):
         return tmpl % ( msg['from_user'], txt, msg_url )
 
 class IdentiSearch(MicroSearch):
-    def __init__(self, url, channel, print_1st = True, bot_fact = None):
-        super(IdentiSearch,self).__init__(url, channel, print_1st, bot_fact)
+
+    # type of search object (I, M, T)
+    obj_type = "I"
+
+    def __init__(self, url, channel, bot_fact = None):
+        super(IdentiSearch,self).__init__(url, channel, bot_fact)
 
     def format_output(self, msg):
         # IdentiCa does not supply the URL of the entry in its JSON results :(
@@ -101,13 +117,20 @@ def main():
 
     #url = "http://search.twitter.com/search.json?q=+SIOC+OR+FOAF+OR+%23deri"
 
+    class MockFactory(object):
+        def __init__(self, cfg = None):
+            self.memory = {}
+
     if len(sys.argv)>1:
         if sys.argv[1]=="twitter":
             url = "http://search.twitter.com/search.json?q=+SIOC+OR+FOAF+OR+%23deri"
-            t = TwitterSearch(url)
+            t = TwitterSearch(url, "", MockFactory())
         elif sys.argv[1]=="identica":
             url = "http://identi.ca/api/search.json?q=SIOC"
-            t = IdentiSearch(url)
+            t = IdentiSearch(url, "", MockFactory())
+        else:
+            print "Usage: %s [twitter|identica]" % (sys.argv[0],)
+            sys.exit(-1)
     else:
         print "Usage: %s [twitter|identica]" % (sys.argv[0],)
         sys.exit(-1)

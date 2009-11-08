@@ -42,11 +42,11 @@ class ChannelBot(object):
             print "[%s] joined %s" % (time.asctime(time.localtime(time.time())),channel)
 # XXX !!!
             if self.tw_url:
-                self.t_srch = TwitterSearch(self.tw_url, self.channel, print_1st=True, bot_fact=self.bot_fact)
+                self.t_srch = TwitterSearch(self.tw_url, self.channel, bot_fact=self.bot_fact)
                 self.t_task = task.LoopingCall(self.getTwitMsgs)
                 self.t_task.start(POLL_INTERVAL)
             if self.id_url:
-                self.i_srch = IdentiSearch(self.id_url, self.channel, print_1st=True, bot_fact=self.bot_fact)
+                self.i_srch = IdentiSearch(self.id_url, self.channel, bot_fact=self.bot_fact)
                 self.i_task = task.LoopingCall(self.getIdentMsgs)
                 self.i_task.start(POLL_INTERVAL)
         else:

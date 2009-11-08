@@ -41,6 +41,40 @@ class SearchFilterTest(unittest.TestCase):
         res = self.t_srch.read_data(json.dumps(data))
         self.assertEqual(len(list(res)), 1)
 
+
+class MaxLimitTest(unittest.TestCase):
+    def setUp(self):
+        self.t_srch = MicroSearch("some url", "", bot_fact = MockFactory())
+        self.data = self.gen_test_data(1, 10)
+
+    def gen_test_data(self, start, num):
+        data = { 'results' : [] }
+        for i in range(start, num+1):
+            item = {'id': i, 'text': 'something', 'from_user': 'user', 'created_at': 'Sun, Aug 1'}
+            data['results'].append(item)
+        return data
+
+    def test_1st_run(self):
+        """On the first run, a maximum of <max_tweets> messages should be reported"""
+        data = self.gen_test_data(1, 20)
+        res = self.t_srch.read_data(json.dumps(data))
+        self.assertEqual(len(list(res)), self.t_srch.max_tweets)
+
+    def test_next_run(self):
+        """On subsequent runs, all new messages should be reported"""
+        # 1st run
+        data = self.gen_test_data(1, 20)
+        res = self.t_srch.read_data(json.dumps(data))
+        # generator from 1st call needs to consumed before next call can be issued
+        out = list(res)
+
+        # 2nd run
+        data = self.gen_test_data(30, 40)
+        res = self.t_srch.read_data(json.dumps(data))
+        out = list(res)
+        self.assertEqual(len(out), len(data['results']))
+
+
 class TwitIrregularityTest(unittest.TestCase):
     # Test that if Twitter omits previosly reported tweet, it does not get 
     # sent to IRC channel twice

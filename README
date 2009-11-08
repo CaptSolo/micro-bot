@@ -21,5 +21,8 @@ Requirements:
 
 python IrcBot.py config-file
 
+== Notes ==
 
+For information about behaviour of the bot (for example, how many past messages are reported
+on joining the channel) see the Notes file.
 
