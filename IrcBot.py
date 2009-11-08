@@ -9,6 +9,7 @@ from twisted.internet import protocol, reactor
 from twisted.words.protocols import irc
 
 import ChannelBot
+import ConfigParser
 
 from MicroBlogSearch import TwitterSearch, IdentiSearch
 
@@ -79,6 +80,18 @@ class LogBotFactory(protocol.ClientFactory):
     def __init__(self, cfg):
         self.cfg = cfg
         self.memory = {}
+        self._check_config()
+
+    def _check_config(self):
+        try:
+            server = self.cfg.param("server")
+            nick = self.cfg.param("nick")
+        except ConfigParser.NoOptionError, e:
+            print "\nMandatory config parameter not found:\n   %s\n" % (str(e),)
+            if reactor.running:
+                reactor.stop()
+            else:
+                sys.exit(-1)
 
     def clientConnectionLost(self, connector, reason):
         print "Lost connection (%s), reconnecting." % (reason,)
