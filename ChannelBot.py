@@ -32,6 +32,10 @@ class ChannelBot(object):
         if self.id_url is None and self.tw_url is None:
             raise ChannelConfigError("At least one URL to monitor must be specified in ChannelBot config. Section: [%s]" % (chan_cfg,))
 
+    def send(self, channel, msg):
+        # to use channel notices instead of messages, change "irc.msg" to "irc.notice"
+        self.irc.msg(channel, msg)
+
     def onJoined(self, channel):
         if self.channel == channel:
             # XXX launch twit/ident listeners here
@@ -67,7 +71,7 @@ class ChannelBot(object):
         cnt = 0
         for i in self.t_srch.read_data(msg):
             print self.t_srch.format_output(i).encode('utf-8')
-            self.irc.msg(self.channel, self.t_srch.format_output(i).encode('utf-8'))
+            self.send(self.channel, self.t_srch.format_output(i).encode('utf-8'))
             cnt += 1
         print "[%s]   %s new Twitter messages processed" % (time.asctime(time.localtime(time.time())), cnt) 
     
@@ -82,7 +86,7 @@ class ChannelBot(object):
         cnt = 0
         for i in self.i_srch.read_data(msg):
             print self.i_srch.format_output(i).encode('utf-8')
-            self.irc.msg(self.channel, self.i_srch.format_output(i).encode('utf-8'))
+            self.send(self.channel, self.i_srch.format_output(i).encode('utf-8'))
             cnt += 1
         print "[%s]   %s new Identica messages processed" % (time.asctime(time.localtime(time.time())), cnt) 
 
