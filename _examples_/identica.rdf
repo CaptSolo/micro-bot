@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:laconica="http://laconi.ca/ont/" xmlns="http://purl.org/rss/1.0/">
+ <sioc:Site rdf:about="http://identi.ca/">
+  <sioc:name>Identi.ca</sioc:name>
+  <sioc:container_of>
+   <sioc:Container rdf:about="http://identi.ca/search/notice/rss?q=SIOC"></sioc:Container>
+</sioc:container_of>
+</sioc:Site>
+ <channel rdf:about="http://identi.ca/search/notice/rss?q=SIOC">
+  <title>Identi.ca Search Stream for &quot;SIOC&quot;</title>
+  <link>http://identi.ca/search/notice?q=SIOC</link>
+  <description>All updates matching search term &quot;SIOC&quot;</description>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <items>
+   <rdf:Seq>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2277127"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2277113"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2262524"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2262441"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2262208"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2262145"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2262139"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2261543"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2261494"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2261435"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2260056"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2259966"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/2232009"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1430766"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1261248"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1251060"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/746553"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/730747"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/469502"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/228793"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/171355"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/136432"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/105787"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/99938"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/99730"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/97407"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/94580"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/77105"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/68113"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/40105"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/575"></sioct:MicroblogPost>
+</rdf:Seq>
+</items>
+</channel>
+ <item rdf:about="http://identi.ca/notice/2277127">
+  <title>captsolo: http://tr.im/sioc8 also links back to &quot;Tales from the SIOC-o-sphere&quot; #1-#7 - !sioc</title>
+  <link>http://identi.ca/notice/2277127</link>
+  <description>captsolo's status on Friday, 13-Feb-09 08:43:40 UTC</description>
+  <dc:date>2009-02-13T08:43:40+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2277113">
+  <title>captsolo: &quot;Tales from the SIOC-o-sphere #8&quot; - a great !sioc resource by @johnbreslin (take a look if you have not seen it) - http://tr.im/sioc8</title>
+  <link>http://identi.ca/notice/2277113</link>
+  <description>captsolo's status on Friday, 13-Feb-09 08:42:08 UTC</description>
+  <dc:date>2009-02-13T08:42:08+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2262524">
+  <title>marjoleink: /me waves back at @captsolo and other !sioc group members :)</title>
+  <link>http://identi.ca/notice/2262524</link>
+  <description>marjoleink's status on Thursday, 12-Feb-09 14:03:29 UTC</description>
+  <dc:date>2009-02-12T14:03:29+00:00</dc:date>
+  <dc:creator>Marjolein Katsma</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/12956"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/12956-96-20090131063357.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2262441">
+  <title>captsolo: /me waves to @evan, @goern, @luca1983, @oddbloke and @marjoleink, who just joined the !sioc group :)</title>
+  <link>http://identi.ca/notice/2262441</link>
+  <description>captsolo's status on Thursday, 12-Feb-09 13:57:15 UTC</description>
+  <dc:date>2009-02-12T13:57:15+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2262208">
+  <title>captsolo: for !sioc developer discussions: SIOC-Dev @ http://groups.google.com/group/sioc-dev</title>
+  <link>http://identi.ca/notice/2262208</link>
+  <description>captsolo's status on Thursday, 12-Feb-09 13:35:51 UTC</description>
+  <dc:date>2009-02-12T13:35:51+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2262145">
+  <title>captsolo: !sioc there is also a #sioc IRC chan on freenode. suitable for higher-bandwidth communication.</title>
+  <link>http://identi.ca/notice/2262145</link>
+  <description>captsolo's status on Thursday, 12-Feb-09 13:31:56 UTC</description>
+  <dc:date>2009-02-12T13:31:56+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2262139">
+  <title>captsolo: hi and welcome! you're fast at &quot;stalking&quot; group creation / joining up - !sioc #sioc - :)</title>
+  <link>http://identi.ca/notice/2262139</link>
+  <description>captsolo's status on Thursday, 12-Feb-09 13:31:02 UTC</description>
+  <dc:date>2009-02-12T13:31:02+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2261543">
+  <title>marjoleink: @evan thanks for the pointer to !sioc!</title>
+  <link>http://identi.ca/notice/2261543</link>
+  <description>marjoleink's status on Thursday, 12-Feb-09 12:45:14 UTC</description>
+  <dc:date>2009-02-12T12:45:14+00:00</dc:date>
+  <dc:creator>Marjolein Katsma</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/12956"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/12956-96-20090131063357.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2261494">
+  <title>goern: just stalked !sioc #sioc</title>
+  <link>http://identi.ca/notice/2261494</link>
+  <description>goern's status on Thursday, 12-Feb-09 12:39:46 UTC</description>
+  <dc:date>2009-02-12T12:39:46+00:00</dc:date>
+  <dc:creator>Christoph Goern</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/12821"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/12821-96-20080710063004.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2261435">
+  <title>evan: Just joined !sioc. Rockin'.</title>
+  <link>http://identi.ca/notice/2261435</link>
+  <description>evan's status on Thursday, 12-Feb-09 12:35:25 UTC</description>
+  <dc:date>2009-02-12T12:35:25+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20090206091025.jpeg"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2260056">
+  <title>captsolo: sioc</title>
+  <link>http://identi.ca/notice/2260056</link>
+  <description>captsolo's status on Thursday, 12-Feb-09 10:27:56 UTC</description>
+  <dc:date>2009-02-12T10:27:56+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2259966">
+  <title>captsolo: has anyone else used identi.ca RSS feeds with an RDF parser? - #sioc #rss #rdf</title>
+  <link>http://identi.ca/notice/2259966</link>
+  <description>captsolo's status on Thursday, 12-Feb-09 10:20:33 UTC</description>
+  <dc:date>2009-02-12T10:20:33+00:00</dc:date>
+  <dc:creator>CaptSolo</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30793"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/2232009">
+  <title>rgaidot: RT @terraces: SIOC + MediaWiki = http://ping.fm/secjT - enjoy !</title>
+  <link>http://identi.ca/notice/2232009</link>
+  <description>rgaidot's status on Tuesday, 10-Feb-09 19:11:02 UTC</description>
+  <dc:date>2009-02-10T19:11:02+00:00</dc:date>
+  <dc:creator>Régis GAIDOT</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/15524"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/15524-96-20080720193629.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/1430766">
+  <title>mlinksva: @nyergler talking about http://en.wikipedia.org/wiki/SIOC pronounced &quot;shock&quot; #cc_tech_summit</title>
+  <link>http://identi.ca/notice/1430766</link>
+  <description>mlinksva's status on Friday, 12-Dec-08 14:37:20 UTC</description>
+  <dc:date>2008-12-12T14:37:20+00:00</dc:date>
+  <dc:creator>Mike Linksvayer</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/8"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/8-96-20080813025038.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/1261248">
+  <title>apurva: Great example of really innovative User interface http://sioc.me</title>
+  <link>http://identi.ca/notice/1261248</link>
+  <description>apurva's status on Friday, 28-Nov-08 15:56:26 UTC</description>
+  <dc:date>2008-11-28T15:56:26+00:00</dc:date>
+  <dc:creator>Apurva Roy Choudhury</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/30606"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/30606-96-20081127131934.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/1251060">
+  <title>lespacedunmatin: @evan : I can't comment http://ur1.ca/ux8 got blank pages. Want to troll about FOAF/SIOC.</title>
+  <link>http://identi.ca/notice/1251060</link>
+  <description>lespacedunmatin's status on Thursday, 27-Nov-08 15:55:10 UTC</description>
+  <dc:date>2008-11-27T15:55:10+00:00</dc:date>
+  <dc:creator>Olivier G.</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/13602"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/13602-96-20080710195626.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/746553">
+  <title>drewp: at home, working on my entry for http://wiki.sioc-project.org/index.php/Data/Boards.ie (viz for the birth/fork/death for forums over time)</title>
+  <link>http://identi.ca/notice/746553</link>
+  <description>drewp's status on Tuesday, 07-Oct-08 04:22:47 UTC</description>
+  <dc:date>2008-10-07T04:22:47+00:00</dc:date>
+  <dc:creator>Drew Perttula</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/8563"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/8563-96-20080801035914.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/730747">
+  <title>drewp: at SHDH, working on my entry for http://wiki.sioc-project.org/index.php/Data/Boards.ie</title>
+  <link>http://identi.ca/notice/730747</link>
+  <description>drewp's status on Sunday, 05-Oct-08 04:34:20 UTC</description>
+  <dc:date>2008-10-05T04:34:20+00:00</dc:date>
+  <dc:creator>Drew Perttula</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/8563"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/8563-96-20080801035914.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/469502">
+  <title>tuuli: SIOC+FOAF=LOVE</title>
+  <link>http://identi.ca/notice/469502</link>
+  <description>tuuli's status on Thursday, 04-Sep-08 17:13:34 UTC</description>
+  <dc:date>2008-09-04T17:13:34+00:00</dc:date>
+  <dc:creator>Suvi-Tuuli Engela</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/7763"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/7763-96-20080731065616.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/228793">
+  <title>lespetitescases: @edsu you can use SMOB (http://smob.sioc-project.org/) to make a multi-post to identi.ca and Twitter</title>
+  <link>http://identi.ca/notice/228793</link>
+  <description>lespetitescases's status on Tuesday, 05-Aug-08 15:55:42 UTC</description>
+  <dc:date>2008-08-05T15:55:42+00:00</dc:date>
+  <dc:creator>Gautier Poupeau</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/16989"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/16989-96-20080725095034.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/171355">
+  <title>terraces: Once again, thanks to @lespetitescases ! http://tinyurl.com/5w83tt - I think you won a SIOC shirt :)</title>
+  <link>http://identi.ca/notice/171355</link>
+  <description>terraces's status on Monday, 28-Jul-08 15:38:56 UTC</description>
+  <dc:date>2008-07-28T15:38:56+00:00</dc:date>
+  <dc:creator>Alexandre Passant</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/18023"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/136432">
+  <title>fcz: reading about http://sioc-project.org/ after investigation on the identi.ca rss namespaces</title>
+  <link>http://identi.ca/notice/136432</link>
+  <description>fcz's status on Wednesday, 23-Jul-08 05:27:24 UTC</description>
+  <dc:date>2008-07-23T05:27:24+00:00</dc:date>
+  <dc:creator>Fabricio Campos Zuardi</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/16478"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/16478-96-20080723054847.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/105787">
+  <title>changelogmikenz: Earle Martin: Add SIOC data to global RSS feed. (lib/rssaction.php +53 -2) http://bit.ly/3y2Qzb</title>
+  <link>http://identi.ca/notice/105787</link>
+  <description>changelogmikenz's status on Thursday, 17-Jul-08 23:56:14 UTC</description>
+  <dc:date>2008-07-17T23:56:14+00:00</dc:date>
+  <dc:creator>MikeNZ's laconica changelog</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/14210"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/99938">
+  <title>evan: @lespacedunmatin Yes, I think that's a priority soon. We use SIOC in our RSS feeds; ping @hex about it.</title>
+  <link>http://identi.ca/notice/99938</link>
+  <description>evan's status on Thursday, 17-Jul-08 00:15:22 UTC</description>
+  <dc:date>2008-07-17T00:15:22+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20090206091025.jpeg"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/99730">
+  <title>lespacedunmatin: @evan : you should use SIOC instead of FAOF to export relations betweens account. More thoughs in french on http://minilien.com/?oaLFBF7idO</title>
+  <link>http://identi.ca/notice/99730</link>
+  <description>lespacedunmatin's status on Wednesday, 16-Jul-08 23:16:46 UTC</description>
+  <dc:date>2008-07-16T23:16:46+00:00</dc:date>
+  <dc:creator>Olivier G.</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/13602"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/13602-96-20080710195626.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/97407">
+  <title>tabrez: @evan why is &lt;sioc:User rdf:about=&quot;http://identi.ca/user/XXXX&quot;&gt; element duplicated so many times in the rss feed?</title>
+  <link>http://identi.ca/notice/97407</link>
+  <description>tabrez's status on Wednesday, 16-Jul-08 14:49:30 UTC</description>
+  <dc:date>2008-07-16T14:49:30+00:00</dc:date>
+  <dc:creator>Tabrez Iqbal</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/8831"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/8831-96-20080716155600.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/94580">
+  <title>changeloglaconica: Earle Martin: Add SIOC data to global RSS feed. (lib/rssaction.php +53 -2) http://bit.ly/yr6U1</title>
+  <link>http://identi.ca/notice/94580</link>
+  <description>changeloglaconica's status on Wednesday, 16-Jul-08 00:45:18 UTC</description>
+  <dc:date>2008-07-16T00:45:18+00:00</dc:date>
+  <dc:creator>Laconica Changelog</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/14208"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/77105">
+  <title>nyco: Who knows this? SMOB - Semantic Microblogging http://smob.sioc-project.org/</title>
+  <link>http://identi.ca/notice/77105</link>
+  <description>nyco's status on Saturday, 12-Jul-08 15:17:53 UTC</description>
+  <dc:date>2008-07-12T15:17:53+00:00</dc:date>
+  <dc:creator>Nÿco</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/6631"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/6631-96-20080829134330.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/68113">
+  <title>lespacedunmatin: Identi.ca, mésusage de FOAF et oubli de SIOC : http://www.lespacedunmatin.info/blog/index.php?2008/07/11/904-identica-foaf-et-sioc</title>
+  <link>http://identi.ca/notice/68113</link>
+  <description>lespacedunmatin's status on Friday, 11-Jul-08 00:43:53 UTC</description>
+  <dc:date>2008-07-11T00:43:53+00:00</dc:date>
+  <dc:creator>Olivier G.</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/13602"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/13602-96-20080710195626.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/40105">
+  <title>johnbreslin: @mugecerman Thanks for the welcome!  Trying to figure out what we can do to integrate SMOB http://smob.sioc-project.org/</title>
+  <link>http://identi.ca/notice/40105</link>
+  <description>johnbreslin's status on Monday, 07-Jul-08 12:34:32 UTC</description>
+  <dc:date>2008-07-07T12:34:32+00:00</dc:date>
+  <dc:creator>John Breslin</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/11736"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/11736-96-20080707122539.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <item rdf:about="http://identi.ca/notice/575">
+  <title>hex: @evan Want me to make a stab at some kind of example SIOC (http://rdfs.org/sioc/spec/) output? It should slot into your existing RSS 1.0.</title>
+  <link>http://identi.ca/notice/575</link>
+  <description>hex's status on Friday, 20-Jun-08 16:58:01 UTC</description>
+  <dc:date>2008-06-20T16:58:01+00:00</dc:date>
+  <dc:creator>Earle Martin</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/18"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/18-96-20090128152525.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+</item>
+ <sioc:User rdf:about="http://identi.ca/user/30793">
+  <foaf:nick>captsolo</foaf:nick>
+  <foaf:name>CaptSolo</foaf:name>
+  <sioc:id>30793</sioc:id>
+  <sioc:avatar rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/12956">
+  <foaf:nick>marjoleink</foaf:nick>
+  <foaf:name>Marjolein Katsma</foaf:name>
+  <sioc:id>12956</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/12956-96-20090131063357.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/12821">
+  <foaf:nick>goern</foaf:nick>
+  <foaf:name>Christoph Goern</foaf:name>
+  <sioc:id>12821</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/12821-96-20080710063004.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/1">
+  <foaf:nick>evan</foaf:nick>
+  <foaf:name>Evan Prodromou</foaf:name>
+  <sioc:id>1</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/1-96-20090206091025.jpeg"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/15524">
+  <foaf:nick>rgaidot</foaf:nick>
+  <foaf:name>Régis GAIDOT</foaf:name>
+  <sioc:id>15524</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/15524-96-20080720193629.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/8">
+  <foaf:nick>mlinksva</foaf:nick>
+  <foaf:name>Mike Linksvayer</foaf:name>
+  <sioc:id>8</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/8-96-20080813025038.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/30606">
+  <foaf:nick>apurva</foaf:nick>
+  <foaf:name>Apurva Roy Choudhury</foaf:name>
+  <sioc:id>30606</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/30606-96-20081127131934.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/13602">
+  <foaf:nick>lespacedunmatin</foaf:nick>
+  <foaf:name>Olivier G.</foaf:name>
+  <sioc:id>13602</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/13602-96-20080710195626.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/8563">
+  <foaf:nick>drewp</foaf:nick>
+  <foaf:name>Drew Perttula</foaf:name>
+  <sioc:id>8563</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/8563-96-20080801035914.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/7763">
+  <foaf:nick>tuuli</foaf:nick>
+  <foaf:name>Suvi-Tuuli Engela</foaf:name>
+  <sioc:id>7763</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/7763-96-20080731065616.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/16989">
+  <foaf:nick>lespetitescases</foaf:nick>
+  <foaf:name>Gautier Poupeau</foaf:name>
+  <sioc:id>16989</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/16989-96-20080725095034.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/18023">
+  <foaf:nick>terraces</foaf:nick>
+  <foaf:name>Alexandre Passant</foaf:name>
+  <sioc:id>18023</sioc:id>
+  <sioc:avatar rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/16478">
+  <foaf:nick>fcz</foaf:nick>
+  <foaf:name>Fabricio Campos Zuardi</foaf:name>
+  <sioc:id>16478</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/16478-96-20080723054847.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/14210">
+  <foaf:nick>changelogmikenz</foaf:nick>
+  <foaf:name>MikeNZ's laconica changelog</foaf:name>
+  <sioc:id>14210</sioc:id>
+  <sioc:avatar rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/8831">
+  <foaf:nick>tabrez</foaf:nick>
+  <foaf:name>Tabrez Iqbal</foaf:name>
+  <sioc:id>8831</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/8831-96-20080716155600.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/14208">
+  <foaf:nick>changeloglaconica</foaf:nick>
+  <foaf:name>Laconica Changelog</foaf:name>
+  <sioc:id>14208</sioc:id>
+  <sioc:avatar rdf:resource="http://theme.identi.ca/identica/default-avatar-profile.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/6631">
+  <foaf:nick>nyco</foaf:nick>
+  <foaf:name>Nÿco</foaf:name>
+  <sioc:id>6631</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/6631-96-20080829134330.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/11736">
+  <foaf:nick>johnbreslin</foaf:nick>
+  <foaf:name>John Breslin</foaf:name>
+  <sioc:id>11736</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/11736-96-20080707122539.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/18">
+  <foaf:nick>hex</foaf:nick>
+  <foaf:name>Earle Martin</foaf:name>
+  <sioc:id>18</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/18-96-20090128152525.png"></sioc:avatar>
+</sioc:User>
+</rdf:RDF>

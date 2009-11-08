@@ -1,0 +1,15 @@
+http://search.twitter.com/search.atom?q=+SIOC+OR+FOAF+OR+%23deri
+
+http://search.twitter.com/search.json?q=+SIOC+OR+FOAF+OR+%23deri
+
+Search string (json feed) to act as source of tweets.
+
+System needs to persist datetime OR ID of the last tweet received.
+
+Publish it (them) to IRC.
+
+---
+
+Requires:
+ - simplejson (Python library)
+

@@ -1,0 +1,25 @@
+Things added to the deployed version of IrcBot
+
+ - tweet/ident id to start with can be specified
+ ---> ideally, the bot would remember / persist the ID of last message read,
+      and use that when reloaded or if errors prevented from checking mblogging
+      services inbetween
+
+ - check that last_id for twitter and identi.ca increases monotonically
+   (and never decreases)
+
+ - unescape &quot; in twitter messages
+ ---> same with all messages? (incl. identica?)
+      - depends if they are already escaped or not
+
+---
+
+New ideas:
+
+ - add errbacks for HTTP retrieval
+
+ - add exception handling for errors in 3rd party code (e.g., in RDF parsing)
+   ---> check if there are errors with the content received (e.g., HTML returned instead of RDF/XML)
+
+ - check if the tweet is successfully sent, only then update the ID of last message
+   processed
