@@ -1,5 +1,10 @@
+
+from __future__ import with_statement
+
+import shelve
 import sys
 import time
+from contextlib import closing
 
 VERSION_NUM = "1.0"
 
@@ -77,9 +82,9 @@ class LogBotFactory(protocol.ClientFactory):
     
     protocol = LogBot
     
-    def __init__(self, cfg):
+    def __init__(self, cfg, memory):
         self.cfg = cfg
-        self.memory = {}
+        self.memory = memory
         self._check_config()
 
     def _check_config(self):
@@ -105,22 +110,25 @@ class LogBotFactory(protocol.ClientFactory):
 def main(config_file):
     _cfg = BotConfig(open(config_file), "irc-bot")
 
-#    d = shelve.open(filename)
-
     server = _cfg.param("server")
     port = 6667
 
-    # create factory protocol and application
-    f = LogBotFactory(_cfg)
+    # A file to remember working info in (e.g. IDs of last messages retrieved)
+    MEMORY_FILE = "irc-bot.mem"
 
-    from twisted.protocols.policies import TrafficLoggingFactory
-    f = TrafficLoggingFactory(f, "irc")
+    with closing(shelve.open(MEMORY_FILE, writeback=True)) as _memory:
 
-    # connect factory to this host and port
-    reactor.connectTCP(server, port, f)
+        # create factory protocol and application
+        f = LogBotFactory(_cfg, _memory)
 
-    # run bot
-    reactor.run()
+        from twisted.protocols.policies import TrafficLoggingFactory
+        f = TrafficLoggingFactory(f, "irc")
+
+        # connect factory to this host and port
+        reactor.connectTCP(server, port, f)
+
+        # run bot
+        reactor.run()
 
 
 if __name__ == '__main__':

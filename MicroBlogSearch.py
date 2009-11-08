@@ -65,8 +65,6 @@ class MicroSearch(object):
 class TwitterSearch(MicroSearch):
     def __init__(self, url, print_1st = True, bot_fact = None):
         super(TwitterSearch,self).__init__(url, print_1st, bot_fact)
-        # a temp fix to set the last_id so that the bot does not print too many past messages
-        self.last_id = 5015544845
 
     def format_output(self, msg):
         # Twitter does not supply the URL of the entry in its JSON results :(
@@ -86,8 +84,6 @@ class TwitterSearch(MicroSearch):
 class IdentiSearch(MicroSearch):
     def __init__(self, url, print_1st = True, bot_fact = None):
         super(IdentiSearch,self).__init__(url, print_1st, bot_fact)
-        # a temp fix to set the last_id so that the bot does not print too many past messages
-        self.last_id = 12419975
 
     def format_output(self, msg):
         # IdentiCa does not supply the URL of the entry in its JSON results :(

@@ -12,6 +12,10 @@ Created by:
 License:
   Modified BSD license - see LICENSE.txt
 
+Requirements:
+  * Python 2.5+
+  * SimpleJson library
+  * Twisted framework
 
 == Usage ==
 
