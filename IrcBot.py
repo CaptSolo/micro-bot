@@ -2,7 +2,6 @@ import sys
 import time
 
 VERSION_NUM = "1.0"
-CONFIG_NAME = "config"
 
 sys.path.append(".")
 
@@ -90,9 +89,8 @@ class LogBotFactory(protocol.ClientFactory):
         reactor.stop()
 
 
-if __name__ == '__main__':
-
-    _cfg = BotConfig(open(CONFIG_NAME), "irc-bot")
+def main(config_file):
+    _cfg = BotConfig(open(config_file), "irc-bot")
 
 #    d = shelve.open(filename)
 
@@ -111,3 +109,17 @@ if __name__ == '__main__':
     # run bot
     reactor.run()
 
+
+if __name__ == '__main__':
+    try:
+        config_file = sys.argv[1]
+    except IndexError:
+        print """Usage: %s config-file
+
+For example:
+    1) Copy config.sample to config
+    2) Run "python IrcBot.py config"
+""" % (sys.argv[0],)
+        sys.exit(-1)
+
+    main(config_file)
