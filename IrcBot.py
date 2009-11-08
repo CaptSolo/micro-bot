@@ -114,7 +114,7 @@ def main(config_file):
     port = 6667
 
     # A file to remember working info in (e.g. IDs of last messages retrieved)
-    MEMORY_FILE = "irc-bot.mem"
+    MEMORY_FILE = "IrcBot.mem"
 
     with closing(shelve.open(MEMORY_FILE, writeback=True)) as _memory:
 
